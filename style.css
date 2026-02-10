@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #1f1e1e;
+}
+
+.navbar,
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    color: white;
+    margin-left: 20px; /* Espace entre chaque lien */
+    font-size: 14px;
+    gap: 30px; /* espace uniforme entre tous les liens */
+    
+}
+.navbar a{
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.main {
+    flex: 1;   /* prend tout l’espace disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* centre verticalement */
+    align-items: center;      /* centre horizontalement */
+    text-align: center;
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 20px;
+
+}
+
+.search-bar {
+    width: 600px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 25px;            /* coins arrondis */
+    outline: none;                  /* enlève le contour bleu par défaut */
+    font-size: 16px;                /* taille du texte */
+    background-color: #47474a; /* Bleu Google */
+    color: #f9f9f9; /* Texte blanc */
+}
+
+.search-bar:focus {
+    border-color: #4285f4;          /* bordure bleue quand on clique dedans */
+    box-shadow: 0 0 5px #4285f4;    /* effet lumineux */
+}
+
+.buttons button {
+    background-color: #292a2b;
+    margin: 5px;
+    padding: 10px 20px;
+    color: #f9f9f9;
+    border-radius: 20px;  
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between; /* liens à gauche et à droite */
+  padding: 10px 20px;
+  background-color: #080808;
+  
+}
+
+.footer-left a,
+.footer-right a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 20px;
+  
+}
+
+.footer-left a:hover,
+.footer-right a:hover {
+  text-decoration: underline;
+ 
+}
+
+
+
+
+.safety-message {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.location {
+  text-align: left;
+  padding: 5px 20px;
+  color: #aaa;
+}
+
+.language {
+  text-align: left;
+  padding: 5px 20px;
+  color: #aaa;
+}
+
+.language a {
+  color: #4285f4;
+  text-decoration: none;
+}
+
+.language a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+.upload-menu {
+      position: relative;
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .upload-btn {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .upload-options {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: #222;
+      border: 1px solid #444;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    .upload-options button {
+      display: block;
+      width: 100%;
+      background: none;
+      border: none;
+      color: white;
+      text-align: left;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .upload-options button:hover {
+      background-color: #333;
+    }
